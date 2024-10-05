@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 import pandas as pd
+import os
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score, classification_report
@@ -9,8 +10,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    # Xác định đường dẫn đến file CSV
+    csv_file_path = os.path.join(os.path.dirname(__file__), 'data', 'Education.csv')
+
     # Đọc dữ liệu từ file CSV
-    data = pd.read_csv('C:/Users/vuhuu/OneDrive/Desktop/Ai/VuHuuDo_2274802010185/MachineLearning/Lab02/Code/Education.csv')
+    data = pd.read_csv(csv_file_path)
 
     # Mã hóa các biến phân loại
     X = data['Text']
