@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score, classification_report
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Đọc dữ liệu từ file CSV
-data = pd.read_csv('Education.csv')
+data = pd.read_csv('C:/Users/vuhuu/OneDrive/Desktop/Ai/VuHuuDo_2274802010185/MachineLearning/Lab02/Code/Education.csv')
 
 # Mã hóa các biến phân loại
 X = data['Text']

@@ -5,7 +5,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score, classification_report
 
 # Đọc dữ liệu từ file CSV
-data = pd.read_csv('drug200.csv')
+data = pd.read_csv('C:/Users/vuhuu/OneDrive/Desktop/Ai/VuHuuDo_2274802010185/MachineLearning/Lab02/Code/drug200.csv')
 
 # Mã hóa các biến phân loại
 label_encoder = LabelEncoder()
